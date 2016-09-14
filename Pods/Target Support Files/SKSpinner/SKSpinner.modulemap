@@ -1,0 +1,6 @@
+framework module SKSpinner {
+  umbrella header "SKSpinner-umbrella.h"
+
+  export *
+  module * { export * }
+}

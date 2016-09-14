@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95021EEB1D712B8C0015FD81 /* logo.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 95021EEA1D712B8C0015FD81 /* logo.bmp */; };
+		95021EEE1D7138160015FD81 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950D5D1A1D70CB410096B00B /* CoreBluetooth.framework */; };
+		95064CAB1D77AAF00002CC2A /* CreateUserPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95064CAA1D77AAF00002CC2A /* CreateUserPopupViewController.m */; };
+		950D5D191D70CAE30096B00B /* BLEPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D5D181D70CAE30096B00B /* BLEPrinter.m */; };
+		951FE7371D87739B00A28E17 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951FE7361D87739B00A28E17 /* BaseViewController.m */; };
+		951FE73A1D87741A00A28E17 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951FE7391D87741A00A28E17 /* FormViewController.m */; };
+		951FE73C1D879CBD00A28E17 /* user-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 951FE73B1D879CBD00A28E17 /* user-placeholder.jpg */; };
+		9528E5931D289DB20051B779 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9528E5921D289DB20051B779 /* main.m */; };
+		9528E5961D289DB20051B779 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9528E5951D289DB20051B779 /* AppDelegate.m */; };
+		9528E59C1D289DB20051B779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9528E59A1D289DB20051B779 /* Main.storyboard */; };
+		9528E59E1D289DB20051B779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9528E59D1D289DB20051B779 /* Assets.xcassets */; };
+		9528E5A11D289DB20051B779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9528E59F1D289DB20051B779 /* LaunchScreen.storyboard */; };
+		954FBCBF1D78CDCF008CEB39 /* EditUserPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 954FBCBE1D78CDCF008CEB39 /* EditUserPopupViewController.m */; };
+		9574FDF41D29A2BB0089F77A /* 2048 - Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9574FDF31D29A2BB0089F77A /* 2048 - Logo.png */; };
+		957ADC541D44495B00D47AA8 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 957ADC531D44495B00D47AA8 /* FontAwesome.otf */; };
+		957ADC571D4450D500D47AA8 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957ADC561D4450D500D47AA8 /* ionicons.ttf */; };
+		95A49EAF1D89DF2900314471 /* SelectPrinterPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A49EAE1D89DF2900314471 /* SelectPrinterPopupViewController.m */; };
+		95A49EB21D89ECC500314471 /* BasePopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A49EB11D89ECC500314471 /* BasePopupViewController.m */; };
+		95B2EE601D28BAF800AB8D41 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B2EE5F1D28BAF800AB8D41 /* SettingsViewController.m */; };
+		95B2EE651D28BD4C00AB8D41 /* GVUserDefaults+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B2EE641D28BD4C00AB8D41 /* GVUserDefaults+Properties.m */; };
+		95B2EE681D28C4B300AB8D41 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B2EE671D28C4B300AB8D41 /* MainNavigationController.m */; };
+		95B2EE6B1D28C5D200AB8D41 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B2EE6A1D28C5D200AB8D41 /* SplashViewController.m */; };
+		95B2EE711D28CB8600AB8D41 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B2EE701D28CB8600AB8D41 /* Helper.m */; };
+		95B972E91D7A3B6600C6B3AE /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B972E71D7A3B6600C6B3AE /* Constants.m */; };
+		95B972EA1D7A3B8D00C6B3AE /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9528E5981D289DB20051B779 /* BrowserViewController.m */; };
+		95F31A761D760CB500D45C36 /* PrinterTestCode in Resources */ = {isa = PBXBuildFile; fileRef = 95F31A751D760CB500D45C36 /* PrinterTestCode */; };
+		95FD430E1D87357600D39CD8 /* SelectUserPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FD430D1D87357600D39CD8 /* SelectUserPopupViewController.m */; };
+		CEEE99ACE39A32A7F13126E1 /* Pods_Chantil_li_CRM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2586E3F46D1709F762094D /* Pods_Chantil_li_CRM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0586A319E69929FDB319C28B /* Pods-Chantil.li CRM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chantil.li CRM.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chantil.li CRM/Pods-Chantil.li CRM.release.xcconfig"; sourceTree = "<group>"; };
+		4F2586E3F46D1709F762094D /* Pods_Chantil_li_CRM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chantil_li_CRM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB95866ED183AE2E08EE9FB /* Pods-Chantil.li CRM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chantil.li CRM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chantil.li CRM/Pods-Chantil.li CRM.debug.xcconfig"; sourceTree = "<group>"; };
+		95021EEA1D712B8C0015FD81 /* logo.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = logo.bmp; sourceTree = "<group>"; };
+		95064CA91D77AAF00002CC2A /* CreateUserPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateUserPopupViewController.h; path = Popup/CreateUserPopupViewController.h; sourceTree = "<group>"; };
+		95064CAA1D77AAF00002CC2A /* CreateUserPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateUserPopupViewController.m; path = Popup/CreateUserPopupViewController.m; sourceTree = "<group>"; };
+		950D5D171D70CAE30096B00B /* BLEPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEPrinter.h; path = Base/BLEPrinter.h; sourceTree = "<group>"; };
+		950D5D181D70CAE30096B00B /* BLEPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLEPrinter.m; path = Base/BLEPrinter.m; sourceTree = "<group>"; };
+		950D5D1A1D70CB410096B00B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		951FE7351D87739B00A28E17 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		951FE7361D87739B00A28E17 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		951FE7381D87741A00A28E17 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormViewController.h; sourceTree = "<group>"; };
+		951FE7391D87741A00A28E17 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormViewController.m; sourceTree = "<group>"; };
+		951FE73B1D879CBD00A28E17 /* user-placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "user-placeholder.jpg"; sourceTree = "<group>"; };
+		951FE73D1D87A23800A28E17 /* MenuDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuDelegate.h; path = Base/MenuDelegate.h; sourceTree = "<group>"; };
+		9528E58E1D289DB20051B779 /* Chantil.li CRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chantil.li CRM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9528E5921D289DB20051B779 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9528E5941D289DB20051B779 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9528E5951D289DB20051B779 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9528E5971D289DB20051B779 /* BrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
+		9528E5981D289DB20051B779 /* BrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
+		9528E59B1D289DB20051B779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9528E59D1D289DB20051B779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9528E5A01D289DB20051B779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9528E5A21D289DB20051B779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954FBCBD1D78CDCF008CEB39 /* EditUserPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditUserPopupViewController.h; path = Popup/EditUserPopupViewController.h; sourceTree = "<group>"; };
+		954FBCBE1D78CDCF008CEB39 /* EditUserPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditUserPopupViewController.m; path = Popup/EditUserPopupViewController.m; sourceTree = "<group>"; };
+		9574FDF31D29A2BB0089F77A /* 2048 - Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2048 - Logo.png"; sourceTree = "<group>"; };
+		957ADC531D44495B00D47AA8 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = ../Pods/FontAwesomeKit/FontAwesomeKit/FontAwesome.otf; sourceTree = "<group>"; };
+		957ADC561D4450D500D47AA8 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = ../Pods/FontAwesomeKit/FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
+		95A49EAA1D89D0FC00314471 /* LockScreenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LockScreenDelegate.h; path = Base/LockScreenDelegate.h; sourceTree = "<group>"; };
+		95A49EAD1D89DF2900314471 /* SelectPrinterPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectPrinterPopupViewController.h; path = Popup/SelectPrinterPopupViewController.h; sourceTree = "<group>"; };
+		95A49EAE1D89DF2900314471 /* SelectPrinterPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectPrinterPopupViewController.m; path = Popup/SelectPrinterPopupViewController.m; sourceTree = "<group>"; };
+		95A49EB01D89ECC500314471 /* BasePopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasePopupViewController.h; path = Popup/BasePopupViewController.h; sourceTree = "<group>"; };
+		95A49EB11D89ECC500314471 /* BasePopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasePopupViewController.m; path = Popup/BasePopupViewController.m; sourceTree = "<group>"; };
+		95B2EE351D28AFB400AB8D41 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		95B2EE5E1D28BAF800AB8D41 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		95B2EE5F1D28BAF800AB8D41 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		95B2EE631D28BD4C00AB8D41 /* GVUserDefaults+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GVUserDefaults+Properties.h"; path = "Base/GVUserDefaults+Properties.h"; sourceTree = "<group>"; };
+		95B2EE641D28BD4C00AB8D41 /* GVUserDefaults+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GVUserDefaults+Properties.m"; path = "Base/GVUserDefaults+Properties.m"; sourceTree = "<group>"; };
+		95B2EE661D28C4B300AB8D41 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		95B2EE671D28C4B300AB8D41 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		95B2EE691D28C5D200AB8D41 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		95B2EE6A1D28C5D200AB8D41 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		95B2EE6F1D28CB8600AB8D41 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Helper.h; path = Base/Helper.h; sourceTree = "<group>"; };
+		95B2EE701D28CB8600AB8D41 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Helper.m; path = Base/Helper.m; sourceTree = "<group>"; };
+		95B972E71D7A3B6600C6B3AE /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Base/Constants.m; sourceTree = "<group>"; };
+		95B972E81D7A3B6600C6B3AE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Base/Constants.h; sourceTree = "<group>"; };
+		95F31A751D760CB500D45C36 /* PrinterTestCode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PrinterTestCode; sourceTree = SOURCE_ROOT; };
+		95FD430C1D87357600D39CD8 /* SelectUserPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectUserPopupViewController.h; path = Popup/SelectUserPopupViewController.h; sourceTree = "<group>"; };
+		95FD430D1D87357600D39CD8 /* SelectUserPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectUserPopupViewController.m; path = Popup/SelectUserPopupViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9528E58B1D289DB20051B779 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95021EEE1D7138160015FD81 /* CoreBluetooth.framework in Frameworks */,
+				CEEE99ACE39A32A7F13126E1 /* Pods_Chantil_li_CRM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95064CA71D77AAB80002CC2A /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				95064CA91D77AAF00002CC2A /* CreateUserPopupViewController.h */,
+				95064CAA1D77AAF00002CC2A /* CreateUserPopupViewController.m */,
+				954FBCBD1D78CDCF008CEB39 /* EditUserPopupViewController.h */,
+				954FBCBE1D78CDCF008CEB39 /* EditUserPopupViewController.m */,
+				95FD430C1D87357600D39CD8 /* SelectUserPopupViewController.h */,
+				95FD430D1D87357600D39CD8 /* SelectUserPopupViewController.m */,
+				95A49EAD1D89DF2900314471 /* SelectPrinterPopupViewController.h */,
+				95A49EAE1D89DF2900314471 /* SelectPrinterPopupViewController.m */,
+				95A49EB01D89ECC500314471 /* BasePopupViewController.h */,
+				95A49EB11D89ECC500314471 /* BasePopupViewController.m */,
+			);
+			name = Popup;
+			sourceTree = "<group>";
+		};
+		9528E5851D289DB10051B779 = {
+			isa = PBXGroup;
+			children = (
+				9528E5901D289DB20051B779 /* Chantil.li CRM */,
+				9528E58F1D289DB20051B779 /* Products */,
+				F1DDE0688185F38745BFFA59 /* Pods */,
+				9AC688CA2CDCD1381EEAA0EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9528E58F1D289DB20051B779 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9528E58E1D289DB20051B779 /* Chantil.li CRM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9528E5901D289DB20051B779 /* Chantil.li CRM */ = {
+			isa = PBXGroup;
+			children = (
+				95B2EE621D28BD2500AB8D41 /* Base */,
+				95B2EE371D28B74A00AB8D41 /* Controllers */,
+				9528E5941D289DB20051B779 /* AppDelegate.h */,
+				9528E5951D289DB20051B779 /* AppDelegate.m */,
+				9528E59A1D289DB20051B779 /* Main.storyboard */,
+				9528E59D1D289DB20051B779 /* Assets.xcassets */,
+				9528E59F1D289DB20051B779 /* LaunchScreen.storyboard */,
+				9528E5A21D289DB20051B779 /* Info.plist */,
+				9528E5911D289DB20051B779 /* Supporting Files */,
+			);
+			path = "Chantil.li CRM";
+			sourceTree = "<group>";
+		};
+		9528E5911D289DB20051B779 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95F31A751D760CB500D45C36 /* PrinterTestCode */,
+				95021EEA1D712B8C0015FD81 /* logo.bmp */,
+				951FE73B1D879CBD00A28E17 /* user-placeholder.jpg */,
+				957ADC551D4450B400D47AA8 /* Fonts */,
+				9574FDF31D29A2BB0089F77A /* 2048 - Logo.png */,
+				9528E5921D289DB20051B779 /* main.m */,
+				95B2EE351D28AFB400AB8D41 /* Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		957ADC551D4450B400D47AA8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				957ADC561D4450D500D47AA8 /* ionicons.ttf */,
+				957ADC531D44495B00D47AA8 /* FontAwesome.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		95B2EE371D28B74A00AB8D41 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95064CA71D77AAB80002CC2A /* Popup */,
+				9528E5971D289DB20051B779 /* BrowserViewController.h */,
+				9528E5981D289DB20051B779 /* BrowserViewController.m */,
+				95B2EE5E1D28BAF800AB8D41 /* SettingsViewController.h */,
+				95B2EE5F1D28BAF800AB8D41 /* SettingsViewController.m */,
+				95B2EE661D28C4B300AB8D41 /* MainNavigationController.h */,
+				95B2EE671D28C4B300AB8D41 /* MainNavigationController.m */,
+				95B2EE691D28C5D200AB8D41 /* SplashViewController.h */,
+				95B2EE6A1D28C5D200AB8D41 /* SplashViewController.m */,
+				951FE7351D87739B00A28E17 /* BaseViewController.h */,
+				951FE7361D87739B00A28E17 /* BaseViewController.m */,
+				951FE7381D87741A00A28E17 /* FormViewController.h */,
+				951FE7391D87741A00A28E17 /* FormViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		95B2EE621D28BD2500AB8D41 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				95B972E81D7A3B6600C6B3AE /* Constants.h */,
+				95B972E71D7A3B6600C6B3AE /* Constants.m */,
+				95B2EE631D28BD4C00AB8D41 /* GVUserDefaults+Properties.h */,
+				95B2EE641D28BD4C00AB8D41 /* GVUserDefaults+Properties.m */,
+				95B2EE6F1D28CB8600AB8D41 /* Helper.h */,
+				95B2EE701D28CB8600AB8D41 /* Helper.m */,
+				950D5D171D70CAE30096B00B /* BLEPrinter.h */,
+				950D5D181D70CAE30096B00B /* BLEPrinter.m */,
+				951FE73D1D87A23800A28E17 /* MenuDelegate.h */,
+				95A49EAA1D89D0FC00314471 /* LockScreenDelegate.h */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		9AC688CA2CDCD1381EEAA0EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				950D5D1A1D70CB410096B00B /* CoreBluetooth.framework */,
+				4F2586E3F46D1709F762094D /* Pods_Chantil_li_CRM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1DDE0688185F38745BFFA59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FB95866ED183AE2E08EE9FB /* Pods-Chantil.li CRM.debug.xcconfig */,
+				0586A319E69929FDB319C28B /* Pods-Chantil.li CRM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9528E58D1D289DB20051B779 /* Chantil.li CRM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9528E5A51D289DB20051B779 /* Build configuration list for PBXNativeTarget "Chantil.li CRM" */;
+			buildPhases = (
+				A1524128F893DF89FA9446AF /* [CP] Check Pods Manifest.lock */,
+				9528E58A1D289DB20051B779 /* Sources */,
+				9528E58B1D289DB20051B779 /* Frameworks */,
+				9528E58C1D289DB20051B779 /* Resources */,
+				5256DCB33DF1F2E56D99AF21 /* [CP] Embed Pods Frameworks */,
+				2CE8001E7C19020A2C1DE621 /* [CP] Copy Pods Resources */,
+				95B2EE361D28B32500AB8D41 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chantil.li CRM";
+			productName = "Chantil.li CRM";
+			productReference = 9528E58E1D289DB20051B779 /* Chantil.li CRM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9528E5861D289DB10051B779 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "The Top Hat";
+				TargetAttributes = {
+					9528E58D1D289DB20051B779 = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9528E5891D289DB10051B779 /* Build configuration list for PBXProject "Chantil.li CRM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9528E5851D289DB10051B779;
+			productRefGroup = 9528E58F1D289DB20051B779 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9528E58D1D289DB20051B779 /* Chantil.li CRM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9528E58C1D289DB20051B779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9528E5A11D289DB20051B779 /* LaunchScreen.storyboard in Resources */,
+				9528E59E1D289DB20051B779 /* Assets.xcassets in Resources */,
+				9574FDF41D29A2BB0089F77A /* 2048 - Logo.png in Resources */,
+				95021EEB1D712B8C0015FD81 /* logo.bmp in Resources */,
+				9528E59C1D289DB20051B779 /* Main.storyboard in Resources */,
+				957ADC541D44495B00D47AA8 /* FontAwesome.otf in Resources */,
+				951FE73C1D879CBD00A28E17 /* user-placeholder.jpg in Resources */,
+				95F31A761D760CB500D45C36 /* PrinterTestCode in Resources */,
+				957ADC571D4450D500D47AA8 /* ionicons.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CE8001E7C19020A2C1DE621 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chantil.li CRM/Pods-Chantil.li CRM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5256DCB33DF1F2E56D99AF21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chantil.li CRM/Pods-Chantil.li CRM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95B2EE361D28B32500AB8D41 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 41da1af8cae367d460a26388ddcab46c749fbbb3 b76fbce7126d6f7473ffb7ee8769d51ed3c5261602a92454969dfb2d2ad47e44";
+		};
+		A1524128F893DF89FA9446AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9528E58A1D289DB20051B779 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954FBCBF1D78CDCF008CEB39 /* EditUserPopupViewController.m in Sources */,
+				95064CAB1D77AAF00002CC2A /* CreateUserPopupViewController.m in Sources */,
+				950D5D191D70CAE30096B00B /* BLEPrinter.m in Sources */,
+				951FE73A1D87741A00A28E17 /* FormViewController.m in Sources */,
+				95A49EAF1D89DF2900314471 /* SelectPrinterPopupViewController.m in Sources */,
+				95B2EE6B1D28C5D200AB8D41 /* SplashViewController.m in Sources */,
+				95B2EE651D28BD4C00AB8D41 /* GVUserDefaults+Properties.m in Sources */,
+				951FE7371D87739B00A28E17 /* BaseViewController.m in Sources */,
+				95B972EA1D7A3B8D00C6B3AE /* BrowserViewController.m in Sources */,
+				95A49EB21D89ECC500314471 /* BasePopupViewController.m in Sources */,
+				95B2EE681D28C4B300AB8D41 /* MainNavigationController.m in Sources */,
+				9528E5961D289DB20051B779 /* AppDelegate.m in Sources */,
+				9528E5931D289DB20051B779 /* main.m in Sources */,
+				95B2EE711D28CB8600AB8D41 /* Helper.m in Sources */,
+				95B2EE601D28BAF800AB8D41 /* SettingsViewController.m in Sources */,
+				95B972E91D7A3B6600C6B3AE /* Constants.m in Sources */,
+				95FD430E1D87357600D39CD8 /* SelectUserPopupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9528E59A1D289DB20051B779 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9528E59B1D289DB20051B779 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9528E59F1D289DB20051B779 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9528E5A01D289DB20051B779 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9528E5A31D289DB20051B779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9528E5A41D289DB20051B779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9528E5A61D289DB20051B779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB95866ED183AE2E08EE9FB /* Pods-Chantil.li CRM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Chantil.li CRM/Header.h";
+				INFOPLIST_FILE = "Chantil.li CRM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thetophat.chantil-li-crm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9528E5A71D289DB20051B779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0586A319E69929FDB319C28B /* Pods-Chantil.li CRM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Chantil.li CRM/Header.h";
+				INFOPLIST_FILE = "Chantil.li CRM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thetophat.chantil-li-crm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9528E5891D289DB10051B779 /* Build configuration list for PBXProject "Chantil.li CRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9528E5A31D289DB20051B779 /* Debug */,
+				9528E5A41D289DB20051B779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9528E5A51D289DB20051B779 /* Build configuration list for PBXNativeTarget "Chantil.li CRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9528E5A61D289DB20051B779 /* Debug */,
+				9528E5A71D289DB20051B779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9528E5861D289DB10051B779 /* Project object */;
+}
