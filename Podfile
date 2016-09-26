@@ -17,4 +17,6 @@ target 'Chantil.li CRM' do
 	pod 'ABPadLockScreen'
 	pod 'SKSpinner'
 	pod 'ApIdleManager'
+	pod 'FTIndicator'
+	pod 'JWPlayer-SDK', '~> 2.0'
 end

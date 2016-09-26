@@ -9,10 +9,14 @@
 #import <XLForm/XLForm.h>
 #import "MenuDelegate.h"
 #import "SelectUserPopupViewController.h"
+#import "SelectPrinterPopupViewController.h"
 #import "ABPadLockScreen.h"
 
-@interface FormViewController : XLFormViewController <SelectUserPopupViewControllerDelegate, ABPadLockScreenViewControllerDelegate, MenuDelegate>
+@interface FormViewController : XLFormViewController <SelectUserPopupViewControllerDelegate, SelectPrinterPopupViewControllerDelegate, ABPadLockScreenViewControllerDelegate, MenuDelegate>
 
 @property (nonatomic) BOOL ignoreCheckAppStatus;
+@property (nonatomic) BOOL openOdooPOS;
+
+- (void) checkAppStatus;
 
 @end

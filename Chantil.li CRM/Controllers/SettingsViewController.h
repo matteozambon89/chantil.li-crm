@@ -10,7 +10,8 @@
 #import "FormViewController.h"
 #import "CreateUserPopupViewController.h"
 #import "EditUserPopupViewController.h"
+#import "SelectPrinterPopupViewController.h"
 
-@interface SettingsViewController : FormViewController <XLFormDescriptorDelegate, CreateUserPopupViewControllerDelegate, EditUserPopupViewControllerDelegate>
+@interface SettingsViewController : FormViewController <LockScreenDelegate, XLFormDescriptorDelegate, CreateUserPopupViewControllerDelegate, EditUserPopupViewControllerDelegate, SelectPrinterPopupViewControllerDelegate>
 
 @end

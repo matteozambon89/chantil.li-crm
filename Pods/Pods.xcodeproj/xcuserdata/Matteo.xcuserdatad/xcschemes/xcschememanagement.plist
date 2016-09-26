@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FTIndicator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FontAwesomeKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -92,7 +97,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1152EFDB6672B4C5AD15A4A5F80D9ADE</key>
+		<key>29196178FBE6654AA78012D2D6E06C13</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,7 +107,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4AE6FAB62D93760DCF7ECCA10F9BF139</key>
+		<key>521933481538F32D9900279473D701E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,12 +117,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>583917FC1D40843B29FFCB8FF4F4E9F8</key>
+		<key>59C5734CBDBC16DD52556632EF13C40B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59C5734CBDBC16DD52556632EF13C40B</key>
+		<key>6F04D2EB19E361DFF9FD343401854AE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,17 +137,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8BF514F87673DDEBFF83C131FBD3F136</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>CBBAC4E0146B4FD186B0026F84E671C2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D24FBB19223B70FD47D04D81785C3C41</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,7 +147,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>E9BA32A3C54E8F2976A2D4334BC64582</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC507B574BB61A6B5B174F27E3FCD0DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F43D9CA3563E2A47F815ADCBA154FB9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF7EE9826BB275048CD2E18868C805EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

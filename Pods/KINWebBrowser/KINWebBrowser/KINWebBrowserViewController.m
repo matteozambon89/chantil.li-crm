@@ -153,13 +153,16 @@ static void *KINWebBrowserContext = &KINWebBrowserContext;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     [self.navigationController setToolbarHidden:NO animated:YES];
     
     [self.navigationController.navigationBar addSubview:self.progressView];
     
-    [self updateToolbarState];
+	[self updateToolbarState];
+	
+	if([self.delegate respondsToSelector:@selector(webBrowser:viewWillAppear:)]) {
+		[self.delegate webBrowser:self viewWillAppear:animated];
+	}
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -171,6 +174,10 @@ static void *KINWebBrowserContext = &KINWebBrowserContext;
     
     [self.uiWebView setDelegate:nil];
     [self.progressView removeFromSuperview];
+	
+	if([self.delegate respondsToSelector:@selector(webBrowser:viewWillDisappear:)]) {
+		[self.delegate webBrowser:self viewWillDisappear:animated];
+	}
 }
 
 #pragma mark - Public Interface

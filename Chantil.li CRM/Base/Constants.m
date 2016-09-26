@@ -36,7 +36,14 @@ NSString *const formShortCode = @"formShortCode";
 NSString *const formProtocol = @"protocol";
 NSString *const formHost = @"host";
 NSString *const formPort = @"port";
+NSString *const formOdooHomePath = @"odoo-home-path";
 NSString *const formOdooLoginPath = @"odoo-login-path";
 NSString *const formOdooLoginJS = @"odoo-login-js";
+NSString *const formOdooPOSPath = @"odoo-pos-path";
+NSString *const formOdooPOSJS = @"odoo-pos-js";
+NSString *const formOdooSessionCookieName = @"odoo-session-cookie-name";
+
+// Printer
+int const printerMaxCharPerLine = 30;
 
 @end

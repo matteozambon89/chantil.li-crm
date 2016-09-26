@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface BrowserViewController : BaseViewController <KINWebBrowserDelegate>
+@interface BrowserViewController : BaseViewController <LockScreenDelegate, KINWebBrowserDelegate>
 
-@property (nonatomic) BOOL runLogin;
+@property (nonatomic) BOOL startWithPOS;
 
 @end
 

@@ -10,6 +10,8 @@
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) NSTimer *timer;
+
 @end
 
 @implementation AppDelegate
@@ -23,6 +25,13 @@
 	
 	// App Setup
 	[Helper setupApp];
+	
+	// Init Process Pool
+	self.processPool = [[WKProcessPool alloc] init];
+	
+	// Init WebView Configuration
+	self.webViewConfig = [[WKWebViewConfiguration alloc] init];
+	[self.webViewConfig setProcessPool:self.processPool];
 	
 	return YES;
 }
@@ -61,26 +70,101 @@
 }
 
 // Peripheral >>>
+- (void) didUpdateBluetoothState:(CBManagerState)state
+{
+	SharedAppDelegate.bluetoothState = state;
+	
+	switch(state)
+	{
+		case CBCentralManagerStatePoweredOff:
+		{
+			[SharedAppDelegate.menuItemPrinter setIcon:[Helper imagePrinterOff]];
+			break;
+		}
+			
+		case CBCentralManagerStateUnauthorized:
+		{
+			[SharedAppDelegate.menuItemPrinter setIcon:[Helper imagePrinterError]];
+			break;
+		}
+			
+		case CBCentralManagerStateUnknown:
+		{
+			[SharedAppDelegate.menuItemPrinter setIcon:[Helper imagePrinterError]];
+			break;
+		}
+			
+		case CBCentralManagerStatePoweredOn:
+		{
+			NSDictionary *printer = [GVUserDefaults standardUserDefaults].printer;
+			if(!printer || ![printer valueForKey:@"uuid"])
+			{
+				[SharedAppDelegate.menuItemPrinter setIcon:[Helper imageNoPrinter]];
+			}
+			else
+			{
+				[SharedAppDelegate.menuItemPrinter setIcon:[Helper imagePrinterOff]];
+			}
+			break;
+		}
+			
+		case CBCentralManagerStateResetting:
+		{
+			[SharedAppDelegate.menuItemPrinter setIcon:[Helper imagePrinterOff]];
+			// Check what to do
+			break;
+		}
+			
+		case CBCentralManagerStateUnsupported:
+		{
+			[SharedAppDelegate.menuItemPrinter setIcon:[Helper imagePrinterError]];
+			break;
+		}
+	}
+}
 - (void) didFoundPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
 {
-	//	SharedAppDelegate.peripheral = peripheral;
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"printer.didFoundPeripheral" object:self userInfo:@{
+																													@"peripheral": peripheral,
+																													@"advertisementData": advertisementData,
+																													@"RSSI": RSSI
+																													}];
 	
-	//	[SharedAppDelegate.printer connectPeripheral:SharedAppDelegate.peripheral];
-	//	[SharedAppDelegate.printer stopScanning];
+	[Helper printerTryReconnect:peripheral];
+}
+- (void) willConnectPeripheral:(CBPeripheral *)peripheral
+{
+	NSString *message = [NSString stringWithFormat:@"Connecting to %@...", peripheral.name];
+	[FTIndicator showToastMessage:message];
 }
 - (void) didConnectPeripheral:(CBPeripheral *)peripheral
 {
+	NSString *message = [NSString stringWithFormat:@"Connected to %@!", peripheral.name];
+	[FTIndicator showToastMessage:message];
 	
+	// Printer is now ON
+	[SharedAppDelegate.menuItemPrinter setIcon:[Helper imagePrinterOn]];
+	
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"printer.didConnectPeripheral" object:self userInfo:@{
+																													@"peripheral": peripheral
+																													}];
+
 }
 - (void) didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error
 {
-	[SVProgressHUD showErrorWithStatus:[error localizedDescription]];
+	NSString *message = [error localizedDescription];
+	[FTIndicator showToastMessage:message];
+	
+	// Printer is now ON
+	[SharedAppDelegate.menuItemPrinter setIcon:[Helper imagePrinterOn]];
 }
 - (void) didDisconnectPeripheral:(CBPeripheral *)peripheral
 {
-	NSString *msg = [NSString stringWithFormat:@"%@ signal lost", [peripheral name]];
+	NSString *message = [NSString stringWithFormat:@"%@ signal lost", [peripheral name]];
+	[FTIndicator showToastMessage:message];
 	
-	[SVProgressHUD showInfoWithStatus:msg];
+	// Printer is now ON
+	[SharedAppDelegate.menuItemPrinter setIcon:[Helper imagePrinterOff]];
 }
 - (void) didRecieveData:(NSData *)data
 {

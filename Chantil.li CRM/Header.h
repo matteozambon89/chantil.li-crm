@@ -17,6 +17,9 @@
 #ifndef Header_h
 #define Header_h
 
+// WebKit
+#import <WebKit/WebKit.h>
+
 // Constants
 #import "Constants.h"
 
@@ -63,5 +66,8 @@
 
 // ApIdleManager - https://cocoapods.org/pods/ApIdleManager
 #import "ApIdleManager.h"
+
+// FTIndicator - https://cocoapods.org/pods/FTNotificationIndicator
+#import "FTIndicator.h"
 
 #endif /* Header_h */

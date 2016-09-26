@@ -2,7 +2,7 @@ PODS:
   - ABPadLockScreen (3.4.1)
   - ApIdleManager (0.0.4)
   - ARChromeActivity (1.0.5)
-  - Crashlytics (3.8.1):
+  - Crashlytics (3.8.2):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
   - FontAwesomeKit (2.2.0):
@@ -20,7 +20,14 @@ PODS:
     - FontAwesomeKit/Core
   - FontAwesomeKit/Zocial (2.2.0):
     - FontAwesomeKit/Core
+  - FTIndicator (1.1.4):
+    - FTIndicator/FTNotificationIndicator (= 1.1.4)
+    - FTIndicator/FTNotificationIndicator (= 1.1.4)
+    - FTIndicator/FTProgressIndicator (= 1.1.4)
+  - FTIndicator/FTNotificationIndicator (1.1.4)
+  - FTIndicator/FTProgressIndicator (1.1.4)
   - GVUserDefaults (1.0.2)
+  - JWPlayer-SDK (2.4.5)
   - KCFloatingActionButton (2.0.0)
   - KINWebBrowser (1.3.2):
     - ARChromeActivity (= 1.0.5)
@@ -38,7 +45,9 @@ DEPENDENCIES:
   - Crashlytics
   - Fabric
   - FontAwesomeKit
+  - FTIndicator
   - GVUserDefaults
+  - JWPlayer-SDK (~> 2.0)
   - KCFloatingActionButton (from `https://github.com/kciter/KCFloatingActionButton.git`, branch `swift3.0`)
   - KINWebBrowser
   - MTBBarcodeScanner
@@ -61,10 +70,12 @@ SPEC CHECKSUMS:
   ABPadLockScreen: 4185a25c40291946071aa12908c0d0ad242bc420
   ApIdleManager: ea80b8b283919229982cb80661aa8c08f67e6070
   ARChromeActivity: 821c7849b566f49583987468733a896fee35aa4d
-  Crashlytics: 4391d8df0b125345e9f209c5db6e7f40a6a8435d
+  Crashlytics: 27acca95a01b042a8294291dd6dff27f8f6af6d7
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
+  FTIndicator: 05f17450b2bba20fc2f9d4e17f7e47b43762c968
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  JWPlayer-SDK: 1ba739f5df41266b4ed77a4af245c07f23930885
   KCFloatingActionButton: 3eab4ed6b2ef2e37d5dea82e621fe01d2277a943
   KINWebBrowser: 27aa857a2aa39063ed102cca781d130b679d205f
   MTBBarcodeScanner: 18ab77ad8dfa31db96446c9325e86122d39425d6
@@ -74,6 +85,6 @@ SPEC CHECKSUMS:
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
   XLForm: 2250b4e96ab8ffa5f3355838c79edd90de451782
 
-PODFILE CHECKSUM: 3c2601746c84f761f3c2778cb40e8f10dc352618
+PODFILE CHECKSUM: 41785270ab53c3a92bd3dcc19dcc5a0d1a935251
 
 COCOAPODS: 1.1.0.rc.2

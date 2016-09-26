@@ -37,7 +37,14 @@ FOUNDATION_EXPORT NSString *const formShortCode;
 FOUNDATION_EXPORT NSString *const formProtocol;
 FOUNDATION_EXPORT NSString *const formHost;
 FOUNDATION_EXPORT NSString *const formPort;
+FOUNDATION_EXPORT NSString *const formOdooHomePath;
 FOUNDATION_EXPORT NSString *const formOdooLoginPath;
 FOUNDATION_EXPORT NSString *const formOdooLoginJS;
+FOUNDATION_EXPORT NSString *const formOdooPOSPath;
+FOUNDATION_EXPORT NSString *const formOdooPOSJS;
+FOUNDATION_EXPORT NSString *const formOdooSessionCookieName;
+
+// Printer
+FOUNDATION_EXPORT int const printerMaxCharPerLine;
 
 @end

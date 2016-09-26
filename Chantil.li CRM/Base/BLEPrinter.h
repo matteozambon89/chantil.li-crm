@@ -28,11 +28,14 @@
 @protocol BLEPrinterDelegate <NSObject>
 
 - (void) didFoundPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI;
+- (void) willConnectPeripheral:(CBPeripheral *)peripheral;
 - (void) didConnectPeripheral:(CBPeripheral *)peripheral;
 - (void) didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error;
 - (void) didDisconnectPeripheral:(CBPeripheral *)peripheral;
 - (void) didRecieveData:(NSData *)data;
 - (void) didSendData:(NSData *)data;
+
+- (void) didUpdateBluetoothState:(CBManagerState)state;
 
 @end
 
@@ -50,13 +53,15 @@
 // Discovery
 - (void) startScanning;
 - (void) stopScanning;
+- (NSArray<CBPeripheral *> *) retrieveConnectedPeripherals;
+- (CBPeripheral *) reconnectPeripheralWithUuid:(NSString *)uuid;
 
 // Connect/Disconnect
 - (void) connectPeripheral:(CBPeripheral *)peripheral;
 - (void) disconnectPeripheral:(CBPeripheral *)peripheral;
 
 // Sending/Receiving
-- (void) testData;
+- (void) sendMessage:(NSString *)message;
 - (BOOL) sendData:(NSData *)data;
 
 // Utility
@@ -64,5 +69,15 @@
 - (BOOL) isConnectedWithPeripheral:(CBPeripheral *)peripheral;
 - (void) enterBackground;
 - (void) enterForeground;
+
+// Line Format
++ (NSString *) lineWithTextToLeft:(NSString *)text;
++ (NSString *) lineWithTextToRight:(NSString *)text;
++ (NSString *) lineWithTextToCenter:(NSString *)text;
++ (NSString *) lineWithTextToCenter:(NSString *)text withDivisor:(BOOL)withDivisor;
++ (NSString *) lineWithTitle:(NSString *)title andText:(NSString *)text;
++ (NSString *) lineWithTitle:(NSString *)title andText:(NSString *)text toRight:(BOOL)toRight;
++ (NSString *) lineWithColumns:(NSArray *)columns;
++ (NSString *) columnWithText:(NSString *)text fittingIn:(int)length toRight:(BOOL)toRight;
 
 @end

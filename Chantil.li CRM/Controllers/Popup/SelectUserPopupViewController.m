@@ -61,6 +61,8 @@
 	row = [XLFormRowDescriptor formRowDescriptorWithTag:@"submit" rowType:XLFormRowDescriptorTypeButton title:@"Login"];
 	[row.cellConfig setValue:[Helper colorPrimary] forKey:@"textColor"];
 	row.action.formBlock = ^(XLFormRowDescriptor * sender){
+		[self deselectFormRow:sender];
+		
 		[self validateForm];
 	};
 	[section addFormRow:row];

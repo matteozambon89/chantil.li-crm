@@ -20,6 +20,7 @@
 		9528E59E1D289DB20051B779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9528E59D1D289DB20051B779 /* Assets.xcassets */; };
 		9528E5A11D289DB20051B779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9528E59F1D289DB20051B779 /* LaunchScreen.storyboard */; };
 		954FBCBF1D78CDCF008CEB39 /* EditUserPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 954FBCBE1D78CDCF008CEB39 /* EditUserPopupViewController.m */; };
+		955E50DC1D9205BC00B1EE97 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 955E50DB1D9205BC00B1EE97 /* PlayerViewController.m */; };
 		9574FDF41D29A2BB0089F77A /* 2048 - Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9574FDF31D29A2BB0089F77A /* 2048 - Logo.png */; };
 		957ADC541D44495B00D47AA8 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 957ADC531D44495B00D47AA8 /* FontAwesome.otf */; };
 		957ADC571D4450D500D47AA8 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957ADC561D4450D500D47AA8 /* ionicons.ttf */; };
@@ -32,6 +33,7 @@
 		95B2EE711D28CB8600AB8D41 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B2EE701D28CB8600AB8D41 /* Helper.m */; };
 		95B972E91D7A3B6600C6B3AE /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B972E71D7A3B6600C6B3AE /* Constants.m */; };
 		95B972EA1D7A3B8D00C6B3AE /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9528E5981D289DB20051B779 /* BrowserViewController.m */; };
+		95C8C5FE1D97634E00C4196F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C8C5FD1D97634E00C4196F /* WebKit.framework */; };
 		95F31A761D760CB500D45C36 /* PrinterTestCode in Resources */ = {isa = PBXBuildFile; fileRef = 95F31A751D760CB500D45C36 /* PrinterTestCode */; };
 		95FD430E1D87357600D39CD8 /* SelectUserPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FD430D1D87357600D39CD8 /* SelectUserPopupViewController.m */; };
 		CEEE99ACE39A32A7F13126E1 /* Pods_Chantil_li_CRM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2586E3F46D1709F762094D /* Pods_Chantil_li_CRM.framework */; };
@@ -65,6 +67,8 @@
 		9528E5A21D289DB20051B779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		954FBCBD1D78CDCF008CEB39 /* EditUserPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditUserPopupViewController.h; path = Popup/EditUserPopupViewController.h; sourceTree = "<group>"; };
 		954FBCBE1D78CDCF008CEB39 /* EditUserPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditUserPopupViewController.m; path = Popup/EditUserPopupViewController.m; sourceTree = "<group>"; };
+		955E50DA1D9205BC00B1EE97 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		955E50DB1D9205BC00B1EE97 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		9574FDF31D29A2BB0089F77A /* 2048 - Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2048 - Logo.png"; sourceTree = "<group>"; };
 		957ADC531D44495B00D47AA8 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = ../Pods/FontAwesomeKit/FontAwesomeKit/FontAwesome.otf; sourceTree = "<group>"; };
 		957ADC561D4450D500D47AA8 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = ../Pods/FontAwesomeKit/FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 		95B2EE701D28CB8600AB8D41 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Helper.m; path = Base/Helper.m; sourceTree = "<group>"; };
 		95B972E71D7A3B6600C6B3AE /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Base/Constants.m; sourceTree = "<group>"; };
 		95B972E81D7A3B6600C6B3AE /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Base/Constants.h; sourceTree = "<group>"; };
+		95C8C5FD1D97634E00C4196F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		95F31A751D760CB500D45C36 /* PrinterTestCode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PrinterTestCode; sourceTree = SOURCE_ROOT; };
 		95FD430C1D87357600D39CD8 /* SelectUserPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectUserPopupViewController.h; path = Popup/SelectUserPopupViewController.h; sourceTree = "<group>"; };
 		95FD430D1D87357600D39CD8 /* SelectUserPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectUserPopupViewController.m; path = Popup/SelectUserPopupViewController.m; sourceTree = "<group>"; };
@@ -96,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C8C5FE1D97634E00C4196F /* WebKit.framework in Frameworks */,
 				95021EEE1D7138160015FD81 /* CoreBluetooth.framework in Frameworks */,
 				CEEE99ACE39A32A7F13126E1 /* Pods_Chantil_li_CRM.framework in Frameworks */,
 			);
@@ -194,6 +200,8 @@
 				951FE7361D87739B00A28E17 /* BaseViewController.m */,
 				951FE7381D87741A00A28E17 /* FormViewController.h */,
 				951FE7391D87741A00A28E17 /* FormViewController.m */,
+				955E50DA1D9205BC00B1EE97 /* PlayerViewController.h */,
+				955E50DB1D9205BC00B1EE97 /* PlayerViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 		9AC688CA2CDCD1381EEAA0EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95C8C5FD1D97634E00C4196F /* WebKit.framework */,
 				950D5D1A1D70CB410096B00B /* CoreBluetooth.framework */,
 				4F2586E3F46D1709F762094D /* Pods_Chantil_li_CRM.framework */,
 			);
@@ -268,6 +277,7 @@
 				TargetAttributes = {
 					9528E58D1D289DB20051B779 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = EHDWQ6X77S;
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -397,6 +407,7 @@
 				95B2EE601D28BAF800AB8D41 /* SettingsViewController.m in Sources */,
 				95B972E91D7A3B6600C6B3AE /* Constants.m in Sources */,
 				95FD430E1D87357600D39CD8 /* SelectUserPopupViewController.m in Sources */,
+				955E50DC1D9205BC00B1EE97 /* PlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,10 +530,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = EHDWQ6X77S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Chantil.li CRM/Header.h";
 				INFOPLIST_FILE = "Chantil.li CRM/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thetophat.chantil-li-crm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,10 +554,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = EHDWQ6X77S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Chantil.li CRM/Header.h";
 				INFOPLIST_FILE = "Chantil.li CRM/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thetophat.chantil-li-crm";
 				PRODUCT_NAME = "$(TARGET_NAME)";

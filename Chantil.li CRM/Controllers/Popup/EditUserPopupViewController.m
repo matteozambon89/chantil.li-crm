@@ -93,6 +93,8 @@
 	row = [XLFormRowDescriptor formRowDescriptorWithTag:@"delete-user" rowType:XLFormRowDescriptorTypeButton title:@"Delete User"];
 	[row.cellConfig setValue:[UIColor redColor] forKey:@"textColor"];
 	row.action.formBlock = ^(XLFormRowDescriptor * sender){
+		[self deselectFormRow:sender];
+		
 		NSArray *userList = [GVUserDefaults standardUserDefaults].userList;
 		
 		NSDictionary *user = [userList objectAtIndex:self.userIndex];

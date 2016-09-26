@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8BF514F87673DDEBFF83C131FBD3F136"
+               BlueprintIdentifier = "29196178FBE6654AA78012D2D6E06C13"
                BuildableName = "Pods_Chantil_li_CRM.framework"
                BlueprintName = "Pods-Chantil.li CRM"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8BF514F87673DDEBFF83C131FBD3F136"
+            BlueprintIdentifier = "29196178FBE6654AA78012D2D6E06C13"
             BuildableName = "Pods_Chantil_li_CRM.framework"
             BlueprintName = "Pods-Chantil.li CRM"
             ReferencedContainer = "container:Pods.xcodeproj">
